@@ -1,23 +1,37 @@
-*{
+html, body{
+    background-color:#F2FDFF;
     margin:0;
     padding:0;
-
-    box-sizing: border-box;
+}
+.titulo{
+    background-color:#9AD4D6;
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 1px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
 }
 
 .padre{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
     display: flex;
-    justify-content:space-around; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto; 
 }
 
-.hijo{
-    width:300px;
-    height:250px;
-    background-color: lightblue;
-    padding:70px;
-    margin:3px;
-    display: flex;
-    justify-content: space-around;
+.padre .hijo{
+    width: 330px;
+    height:430px;
+    border-radius: 8px solid;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
 }
 
 .comida{
@@ -41,8 +55,9 @@ button{
     background-color: rebeccapurple;
     padding:18px; 
     height:10px;
+    text-align: center;
+    color: white;
     display: inline-block;
-    border: none;
     cursor: pointer;
 }
 
