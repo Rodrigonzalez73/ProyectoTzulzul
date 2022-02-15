@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <body>
     <h1 class="titulo">
         PIZZERIA
@@ -24,7 +25,7 @@
             <div class="precio">
                 <h4 class="precio1">$12.50</h4> </div>             
             <div class="descripcion">PIZZA CON MOZARELLA</div>
-            <button class="compra">
+            <button onclick="mostrar()" id ="btn" class="compra">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -37,7 +38,7 @@
             <div class="comida">PIZZA NY</div>
             <div class="precio"><h4 class="precio1">$12.50</h4></div>
             <div class="descripcion">PIZZA CON CHEDAR Y BACON</div>
-            <button class="compra">
+            <button onclick="mostrar()" id ="btn" class="compra">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -52,7 +53,7 @@
                 <h4 class="precio1">$12.50</h4>
             </div>
             <div class="descripcion">PIZZA CON MOZARELLA Y PEPERONI</div>
-            <button class="compra">
+            <button onclick="mostrar()" id ="btn" class="compra">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -61,5 +62,7 @@
             </button>
         </article>
     </div>    
+    <script src="/index.js"></script>
+    
 </body>
 </html>
